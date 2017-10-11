@@ -573,7 +573,7 @@ var Value = function (_React$Component) {
 		value: function render() {
 			return React__default.createElement(
 				'div',
-				{ className: classNames('Select-value', this.props.value.className),
+				{ className: classNames('Select-value', this.props.value.disabled ? 'Select-value-disabled' : '', this.props.value.className),
 					style: this.props.value.style,
 					title: this.props.value.title
 				},
@@ -597,7 +597,7 @@ Value.propTypes = {
 };
 
 /*!
-  Copyright (c) 2016 Jed Watson.
+  Copyright (c) 2017 Jed Watson.
   Licensed under the MIT License (MIT), see
   http://jedwatson.github.io/react-select
 */
